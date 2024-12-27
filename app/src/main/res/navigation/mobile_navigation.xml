@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.labproject.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_addnewtask"
+        android:name="com.example.labproject.ui.addnewtask.AddNewTaskFragment"
+        android:label="Add New Task"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_addNewTaskFragment_to_homeFragment"
+            app:destination="@id/nav_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_alltasks"
+        android:name="com.example.labproject.ui.alltasks.AllTaskFragment"
+        android:label="All Tasks"
+        tools:layout="@layout/fragment_all_task" />
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.example.labproject.ui.logout.LogoutFragment"
+        android:label="Log Out"
+        tools:layout="@layout/fragment_logout" />
+
+    <fragment
+        android:id="@+id/nav_updateprofile"
+        android:name="com.example.labproject.ui.updateprofile.UpdateProfileFragment"
+        android:label="Update Profile"
+        tools:layout="@layout/fragment_update_profile" />
+
+    <fragment
+        android:id="@+id/nav_showcompletedtasks"
+        android:name="com.example.labproject.ui.allcompletedtasks.ShowAllCompletedTasks"
+        android:label="Completed Tasks"
+        tools:layout="@layout/fragment_show_all_completed_tasks" />
+
+    <fragment
+        android:id="@+id/nav_searchtask"
+        android:name="com.example.labproject.ui.searchtask.SearchTaskFragment"
+        android:label="Completed Tasks"
+        tools:layout="@layout/fragment_search_task" />
+
+    <fragment
+        android:id="@+id/nav_importtask"
+        android:name="com.example.labproject.ui.importtask.ImportTaskFragment"
+        android:label="Import Tasks"
+        tools:layout="@layout/fragment_import_task" />
+
+
+
+</navigation>

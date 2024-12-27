@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_addnewtask"
+            android:icon="@drawable/ic_baseline_add_task_24"
+            android:title="Add New Task" />
+
+        <item
+            android:id="@+id/nav_alltasks"
+            android:icon="@drawable/ic_baseline_dataset_24"
+            android:title="All Tasks" />
+
+        <item
+            android:id="@+id/nav_searchtask"
+            android:icon="@drawable/ic_baseline_search_24"
+            android:title="Search Task" />
+
+        <item
+            android:id="@+id/nav_importtask"
+            android:icon="@drawable/ic_baseline_import_export_24"
+            android:title="Import Tasks" />
+
+        <item
+            android:id="@+id/nav_showcompletedtasks"
+            android:icon="@drawable/ic_baseline_task_24"
+            android:title="Completed Tasks" />
+
+
+        <item
+            android:id="@+id/nav_updateprofile"
+            android:icon="@drawable/updateuser"
+            android:title="Update Profile" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_baseline_logout_24"
+            android:title="@string/log_out" />
+
+
+    </group>
+
+</menu>

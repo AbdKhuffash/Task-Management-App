@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Day Header -->
+    <TextView
+        android:id="@+id/text_day_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryLight"
+        android:padding="8dp"
+        android:text="Day Header"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:textColor="@android:color/white" />
+
+    <!-- Task Item -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="@drawable/background"
+        android:elevation="2dp"
+        android:layout_marginBottom="8dp">
+
+        <!-- Task Info -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_task_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task Title"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/text_task_due_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Due Date and Time"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray" />
+        </LinearLayout>
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/button_edit_task"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_baseline_edit_24"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="Edit Task" />
+
+            <ImageButton
+                android:id="@+id/button_send_email_task"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/mail"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="Send Email" />
+            <ImageButton
+                android:id="@+id/button_set_notification"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_baseline_notifications_24"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="Set Notification" />
+
+            <ImageButton
+                android:id="@+id/button_delete_task"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_delete"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="Delete Task" />
+
+            <!-- Notification Button -->
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
